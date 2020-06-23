@@ -10,6 +10,7 @@ metadata:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.docker-nodejs-demo: semver:~1.0.0
 spec:
+  replicas: 3
   strategy:
     rollingUpdate:
       maxUnavailable: 0
